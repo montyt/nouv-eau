@@ -10,6 +10,7 @@
     "jquery": "^3.5.1",
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.1",
+    "react-bootstrap-form": "^0.1.4-beta6",
     "react-dom": "^16.13.1",
     "react-horizontal-timeline": "^1.5.3",
     "react-scripts": "3.4.1"
