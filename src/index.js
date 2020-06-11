@@ -8,12 +8,13 @@ import fallvinyard from './fallvinyard.jpeg';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Ourteamcomponent1 from './ourTeamComponent1';
-import Ourteamcomponent2 from './OurTeamComponent2';
-import Ourteamcomponent3 from './ourTeamComponent3';
-import Ourteamcomponent4 from './ourTeamComponent4';
+import Ourteamcomponent from './ourTeamComponent';
 import Timeline from './Timeline';
 import './contactForm.php';
+import tom from './nouveautom.jpg';
+import steve from './NouvEauSteve.jpg';
+import julie from './newjulie.jpg';
+import amanda from './NouvEauAmanda.jpg';
 
 function mailto () {
    window.location.href = "mailto:montytruitt@gmail.com";
@@ -108,14 +109,14 @@ const App = () => {
                 </a>
             </div>
             <div style={{paddingTop: '36px'}}>
-                <Ourteamcomponent1 />
+                <Ourteamcomponent title="Tom Peyton: CEO, Founder, & President" description="Dr. Peyton received his BS in Molecular Biology and PhD in Bionucleonics from the School of Pharmacy at Purdue University. At Purdue University, Dr. Peyton worked as an Adjunct Professor of Environmental Health & Engineering. He founded American Technology Management Corporation (AmTech Consultants) in Washington DC that provided environmental, biotechnology, and health services to over 500 multinational clients including the US Congress’s Biotechnology Program." imgSrc={tom} />
             </div>
             <br/>
-            <Ourteamcomponent2 />
+            <Ourteamcomponent title="Steve Bruhn: CPA, Chief Financial Officer" description="Steve has more than 30 years of corporate experience. He started at Ernst & Whitney, where he worked for seven years. He was then a tax manager for a Fortune 500 firm, where he spent 18 years until opening a private CPA practice. He has now run his business for more than 15 years and is a valuable team asset. He attended Michigan State University, where he received his BS in Accounting and his MBA in Finance." imgSrc={steve} />
             <br/>
-            <Ourteamcomponent3 />
+            <Ourteamcomponent title="Julie Ginn: Vice President" description="Julie has been in commercial property investment financing since 1992. She has first-hand experience in all facets of owning and managing real estate and cash-flow management on multiple fronts. In addition to her development vision, Julie has excelled at creativity, and she offers innovative solutions to challenging situations. Julie is on the board of Building Concepts of Indiana and is a Licensed Real Estate Broker." imgSrc={julie} />
             <div style={{paddingTop: '18px', paddingBottom: '36px'}}>
-                <Ourteamcomponent4 />
+                <Ourteamcomponent title="Amanda Rumba: Executive Officer & Corporate Secretary" description="Amanda brings our team together. She has 10 years of experience working in a variety of community and business services. She earned a Master’s degree in history from the University of Chicago, and her Bachelor’s degree in history from Mercyhurst College. While teaching at the college level, she is also pursuing her PhD in history." imgSrc={amanda} />
             </div>
             <div className="getInTouch">
                 <a id="get_in_touch_page">
@@ -134,7 +135,7 @@ const App = () => {
                     </Form.Group>
                     <Form.Group>
                         <Form.Label>Cell Phone Number</Form.Label>
-                        <Form.Control name="phone" nameplaceholder="Enter Number" />
+                        <Form.Control name="phone" placeholder="(012)345-6789" />
                     </Form.Group>
                     <Form.Group controlId="exampleForm.ControlTextarea1">
                         <Form.Label>Your Message or Question</Form.Label>
